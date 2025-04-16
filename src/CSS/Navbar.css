@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 999;
+
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001b48;
+    margin-left: 80px;
+  }
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nikko {
+    color: #2c99ac;
+  }
+  
+  .am {
+    color: #fbc02d; 
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-left: auto   ;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #001b48;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links li a:hover {
+    color: #0077cc;
+  }
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .navbar-search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    padding-right: 8px;
+  }
+  
+  .search-icon {
+    font-size: 16px;
+    color: #001b48;
+  }
+  

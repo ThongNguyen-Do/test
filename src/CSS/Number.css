@@ -1,0 +1,25 @@
+.number-container {
+    position: fixed;
+    top: 50%;
+    left: 700px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .number-item {
+    font-size: 6rem;
+    color: rgb(155, 213, 228);
+    opacity: 0.2;
+    transition: all 0.3s ease;
+  }
+  
+  .number-item.active {
+    color:  #2c99ac;
+    opacity: 1;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+  

@@ -1,0 +1,101 @@
+.Page1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+
+.content-text {
+  text-align: left;
+  padding-right: 300px;
+  
+}
+
+.Page1 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+.Page1 h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.Page1 p a {
+  font-size: 18px;
+  color: #2c99ac;
+  text-decoration: none;
+ 
+}
+.Page1 p a:hover {
+  color: #759ec4; 
+}
+
+.circle-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid  #2c99ac;
+  color: #2c99ac;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+.learn-more-wrapper a {
+  font-size: 18px;
+  color: #2c99ac;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.circle-arrow {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #2c99ac;
+  background-color: transparent;
+  color: #2c99ac;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.page1-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.page1-left svg {
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transform-origin: left center;
+  margin-left: -80px; 
+}
