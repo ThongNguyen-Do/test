@@ -11,32 +11,40 @@
 
 .content-text {
   text-align: left;
-  padding-right: 300px;
+  padding-right: 450px;
+  margin-top: 200px;
   
 }
 
 .Page1 h2 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight:  150;
   color: black;
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif; 
+ 
 }
 .Page1 h1 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: rgb(104, 104, 104);
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif; 
   margin-top: 100px;
   margin-left: 50px;
-}
 
+}
+.box
+{
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: -900px; /* đẩy chữ ra xa */
+  height: 350px; /* chỉnh độ cao nếu muốn */
+}
 .Page1 p a {
   font-size: 18px;
   color: #2c99ac;
   text-decoration: none;
- 
+  font-family: 'Roboto', sans-serif; 
+  
+  
 }
 .Page1 p a:hover {
   color: #759ec4; 
@@ -69,6 +77,7 @@
   color: #2c99ac;
   text-decoration: none;
   font-weight: bold;
+  
 }
 
 .circle-arrow {

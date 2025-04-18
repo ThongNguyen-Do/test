@@ -14,8 +14,11 @@ const ElongatedCircles = () => {
 
   for (let i = 0; i < numCircles; i++) {
     const offset = (i - Math.floor(numCircles / 2)) * spacing;
-    const radius = maxRadius * (1 - Math.abs(offset) / (numCircles / 2 * spacing));
-
+    
+    const scaleDownBelow = 1; // <-- chỉnh tỉ lệ vòng tròn ở dưới
+    const baseRadius = maxRadius * (1 - Math.abs(offset) / (numCircles / 2 * spacing));
+    const radius = offset > 0 ? baseRadius * scaleDownBelow : baseRadius;
+  
     circles.push(
       <circle
         key={i}
@@ -23,7 +26,7 @@ const ElongatedCircles = () => {
         cy={centerY + offset}
         r={radius}
         stroke="white"
-        strokeWidth="0.6" 
+        strokeWidth="0.6"
         fill="none"
       />
     );

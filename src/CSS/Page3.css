@@ -18,7 +18,7 @@
     font-size: 30px;
     font-weight: bold;
     color: #2c99ac;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; 
     letter-spacing: 1px; 
     line-height: 2;
   }
@@ -27,7 +27,7 @@
     font-size: 40px;
     font-weight: bold;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; 
     letter-spacing: 1px; 
     line-height: 1.8;
   }
@@ -42,18 +42,18 @@
     color: #0766be; 
   }
  .nav{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif; 
     line-height: 1.8;
 
  }
  .money{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: rgba(158, 158, 158, 0.719);
-    font-family: 'Times New Roman', Times, serif;  
+    font-family: 'Roboto', sans-serif;  
     margin-left: 20px;
    
  }
@@ -61,6 +61,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
     line-height: 3;
+    
 }
 .ex{
     display: flex;
@@ -69,7 +70,7 @@
     margin-top: 20px;
 }
 .ex a {
-    font-size: 18px;
+    font-size: 15px;
     color: #2c99ac; 
     text-decoration: none;
     font-weight: bold;

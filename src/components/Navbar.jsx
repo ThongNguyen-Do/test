@@ -1,5 +1,5 @@
 import '../CSS/Navbar.css';
-
+import { FiSearch } from 'react-icons/fi'; 
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -7,6 +7,7 @@ export default function Navbar() {
         <span className="nikko">nikko</span>
         <span className="am">am</span>
        </div>
+       
       <ul className="navbar-links">
         <li><a href="https://www.google.com" target="_blank">About</a></li>
         <li><a href="https://www.google.com" target="_blank">Sustainability</a></li>
@@ -17,7 +18,7 @@ export default function Navbar() {
       </ul>
       <div className="navbar-search">
     <input type="text" placeholder="Singapore" />
-    <span className="search-icon">🔍</span>
+    <span className="search-icon">  <FiSearch /></span>
   </div>
     </nav>
     
