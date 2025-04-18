@@ -1,0 +1,21 @@
+.curve-container {
+    width: 100%;          /* Đảm bảo chiếm hết chiều rộng của phần tử cha */
+    /* max-width: 1000px; */ /* Loại bỏ max-width hoặc tăng giá trị này nếu bạn muốn hình ảnh lớn hơn */
+    margin: 0 auto;       /* Căn giữa container */
+    padding: 20px;        /* Thêm padding để không bị dính mép */
+  }
+  
+  /* Hiển thị trên desktop, laptop */
+  @media (min-width: 768px) {
+    .curve-container {
+      display: block;      /* Đảm bảo hình ảnh hiển thị trên màn hình lớn */
+    }
+  }
+  
+  /* Ẩn hình ảnh trên điện thoại */
+  @media (max-width: 768px) {
+    .curve-container {
+      display: none;       /* Ẩn hình ảnh trên màn hình nhỏ (mobile) */
+    }
+  }
+  

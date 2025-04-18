@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../CSS/Circle.css';
 const ElongatedCircles = () => {
   const width = 400;
   const height = 600;

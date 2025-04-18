@@ -6,55 +6,54 @@
   background-color: white;
   padding: 0;
   margin: 0;
+  overflow: visible;
 }
-
 
 .content-text {
   text-align: left;
   padding-right: 450px;
   margin-top: 200px;
-  
 }
 
 .Page1 h2 {
   font-size: 40px;
-  font-weight:  150;
+  font-weight: 150;
   color: black;
-  font-family: 'Roboto', sans-serif; 
- 
+  font-family: 'Roboto', sans-serif;
 }
+
 .Page1 h1 {
   font-size: 20px;
   font-weight: bold;
   color: rgb(104, 104, 104);
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   margin-top: 100px;
   margin-left: 50px;
+}
 
-}
-.box
-{
+.box {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
-  padding-left: -900px; /* đẩy chữ ra xa */
-  height: 350px; /* chỉnh độ cao nếu muốn */
+  padding-left: 0; 
+  height: 350px; 
 }
+
 .Page1 p a {
   font-size: 18px;
   color: #2c99ac;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif; 
-  
-  
+  font-family: 'Roboto', sans-serif;
 }
+
 .Page1 p a:hover {
-  color: #759ec4; 
+  color: #759ec4;
 }
+
 
 .circle-arrow {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 2px solid  #2c99ac;
+  border: 2px solid #2c99ac;
   color: #2c99ac;
   border-radius: 50%;
   display: flex;
@@ -63,6 +62,7 @@
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
+
 
 .learn-more-wrapper {
   display: flex;
@@ -77,21 +77,9 @@
   color: #2c99ac;
   text-decoration: none;
   font-weight: bold;
-  
 }
 
-.circle-arrow {
-  width: 22px;
-  height: 22px;
-  border: 2px solid #2c99ac;
-  background-color: transparent;
-  color: #2c99ac;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-}
+
 .page1-left {
   flex: 1;
   display: flex;
@@ -106,9 +94,10 @@
   height: auto;
   transform: scale(1);
   transform-origin: left center;
-  margin-left: -80px; 
+  margin-left: -80px;
 }
-/* ✅ Responsive cho màn hình nhỏ */
+
+/* Responsive cho màn hình nhỏ */
 @media (max-width: 768px) {
   .Page1 {
     flex-direction: column;
@@ -153,5 +142,40 @@
   .learn-more-wrapper {
     justify-content: center;
     margin-left: 0;
+  }
+}
+
+/* Responsive cho laptop */
+@media (max-width: 1366px) {
+  .Page1 {
+    padding: 40px 80px;
+  }
+
+  .content-text {
+    padding-right: 200px; 
+    margin-top: 150px;
+  }
+
+  .Page1 h2 {
+    font-size: 36px;
+  }
+
+  .Page1 h1 {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  .box {
+    height: 300px;
+    padding-left: 0;
+  }
+
+  .page1-left svg {
+    margin-left: -50px; 
+  }
+
+  .learn-more-wrapper {
+    margin-left: 30px;
   }
 }

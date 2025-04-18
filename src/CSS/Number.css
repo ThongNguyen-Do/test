@@ -1,25 +1,38 @@
 .number-container {
-    position: fixed;
-    top: 50%;
-    left: 700px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-    z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 700px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Hiển thị trên desktop, laptop */
+@media (min-width: 768px) {
+  .number-container {
+    display: flex; /* Đảm bảo .number-container hiển thị trên màn hình lớn */
   }
-  
-  .number-item {
-    font-size: 6rem;
-    color: rgb(155, 213, 228);
-    opacity: 0.2;
-    transition: all 0.3s ease;
+}
+
+/* Ẩn .number-container trên điện thoại */
+@media (max-width: 768px) {
+  .number-container {
+    display: none; /* Ẩn .number-container trên màn hình nhỏ (mobile) */
   }
-  
-  .number-item.active {
-    color:  #2c99ac;
-    opacity: 1;
-    font-weight: bold;
-    transform: scale(1.2);
-  }
-  
+}
+
+.number-item {
+  font-size: 6rem;
+  color: rgb(155, 213, 228);
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
+.number-item.active {
+  color:  #2c99ac;
+  opacity: 1;
+  font-weight: bold;
+  transform: scale(1.2);
+}

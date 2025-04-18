@@ -120,7 +120,7 @@
   height: 400px;
   margin-left: -70px;
 }
-/* ✅ Responsive cho mobile */
+/*  Responsive cho mobile */
 @media (max-width: 768px) {
   .Page2 {
     flex-direction: column;
@@ -171,5 +171,52 @@
   .link {
     justify-content: center;
     margin-left: 0;
+  }
+}
+/* reposive cho laptop */
+@media (max-width: 1366px) {
+  .text {
+    padding-left: 300px;  /* giảm khoảng cách hợp lý */
+    margin-top: 120px;    /* không cần đẩy quá xa xuống */
+  }
+
+  .Page2 h2 {
+    font-size: 32px;
+    margin-left: -30px;
+  }
+
+  .Page2 h1 {
+    font-size: 14px;
+    margin-left: -30px;
+  }
+
+  .Page2 h3 {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .l {
+    height: 300px;
+    margin-left: -30px;
+  }
+
+  .set {
+    margin-left: 200px;  /* dịch SVG về gần giữa hơn */
+    margin-top: 300px;   /* giảm mạnh khoảng cách xuống */
+  }
+
+  .set svg {
+    width: 300px;
+  }
+
+  .link {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
   }
 }

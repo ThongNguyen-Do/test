@@ -96,7 +96,7 @@
     align-items: flex-start;
     margin-left: 40px;
   }
-  /* ✅ Responsive cho mobile */
+  /*  Responsive cho mobile */
 @media (max-width: 768px) {
   .Page3 {
     flex-direction: column;
@@ -141,5 +141,33 @@
   .page3-left {
     margin-left: 0;
     justify-content: center;
+  }
+}
+/* reposive cho laptop */
+@media (max-width: 1366px) {
+  .page {
+    margin-left: 300px; /* giảm bớt khoảng cách */
+  }
+
+  .Page3 h2 {
+    font-size: 26px;
+  }
+
+  .Page3 h1 {
+    font-size: 32px;
+  }
+
+  .money {
+    margin-left: 10px;
+  }
+
+  .cir {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .page3-left {
+    margin-left: 20px;
   }
 }

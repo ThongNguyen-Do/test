@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../CSS/CurveLines.css';
 const CurveLines = () => {
   const lines = [];
 
@@ -24,10 +24,17 @@ const CurveLines = () => {
   }
 
   return (
-    <svg width="50%" height="50%" viewBox={`0 0 ${width} ${height}`}>
-      {lines}
-    </svg>
+    <div className="curve-container">
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        preserveAspectRatio="xMidYMid meet"
+        style={{ width: "100%", height: "auto" }}
+      >
+        {lines}
+      </svg>
+    </div>
   );
+  
 };
 
 export default CurveLines;
