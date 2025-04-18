@@ -116,7 +116,60 @@
   .l
 {
   border-left: 1px solid white;
-  padding-left: 50px; /* đẩy chữ ra xa */
-  height: 400px; /* chỉnh độ cao nếu muốn */
+  padding-left: 50px; 
+  height: 400px;
   margin-left: -70px;
+}
+/* ✅ Responsive cho mobile */
+@media (max-width: 768px) {
+  .Page2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .set {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    transform: none;
+    width: 100%;
+  }
+
+  .set svg {
+    width: 90%;
+  }
+
+  .text {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Page2 h2 {
+    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .Page2 h1,
+  .Page2 h3 {
+    font-size: 14px;
+    margin-left: 0;
+    line-height: 1.6;
+  }
+
+  .l {
+    border-left: none;
+    border-top: 1px solid white;
+    padding-left: 0;
+    padding-top: 20px;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .link {
+    justify-content: center;
+    margin-left: 0;
+  }
 }

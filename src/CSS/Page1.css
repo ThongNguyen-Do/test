@@ -108,3 +108,50 @@
   transform-origin: left center;
   margin-left: -80px; 
 }
+/* ✅ Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .Page1 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .page1-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .page1-left svg {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .content-text {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .Page1 h2 {
+    font-size: 24px;
+  }
+
+  .Page1 h1 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .box {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .learn-more-wrapper {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
