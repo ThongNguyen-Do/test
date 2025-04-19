@@ -1,222 +1,161 @@
 .Page2 {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    height: 100vh; 
-    padding: 10px;
-    background-color: #2c99ac;
-    
-  }
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  height: 100vh; 
+  padding: 10px;
+  background-color: #2c99ac;
+  flex-wrap: wrap; 
+}
 
-  
-  .text {
-    text-align: left; 
-    padding-left: 1000px; 
-    margin-top: 300px;
-  }
-  
-  .Page2 h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Roboto', sans-serif; 
-    
-    margin-left: -70px;
-  }
-  
-  .Page2 h1 {
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Roboto', sans-serif; 
-   
-    line-height: 1.8;
-    margin-left: -70px;
-  }
-  
-  .Page2 p a {
-    font-size: 18px;
-    color: #2c99ac; 
-    text-decoration: none; 
-    font-family: 'Roboto', sans-serif; 
-  }
-  
-  .Page2 p a:hover {
-    color: #0766be; 
-  }
-  .Page2 h3{
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 1px; 
-    line-height: 1.8;
-    margin-top: 100px;
-    margin-left: 5px;
-    
-  
-   
-  }
-  .link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-  
-  .link a {
-    font-size: 18px;
-    color: rgb(241, 241, 241);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .circle {
-    width: 22px;
-    height: 22px;
-    border: 2px solid #e2e2e2;
-    background-color: transparent;
-    color: #e2e2e2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-  }
-  .Page2 a:hover {
-    color: #1e6b9e; 
-  }
-  .page2-left {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 0;
-    margin-left: 0;
-    position: relative;
-    z-index: 10;
-  }
-  .set {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px; 
-    height: auto;
-    margin-top: 900px;
-    margin-left: 400px;
-  }
-  
-  
-  .set svg {
-    width: 400px;
-    height: auto;
-  }
-  .l
-{
+.text {
+  text-align: left; 
+  padding-left: 1000px; 
+  margin-top: 300px;
+  flex: 1; 
+}
+
+.Page2 h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  margin-left: -70px;
+}
+
+.Page2 h1 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  line-height: 1.8;
+  margin-left: -70px;
+}
+
+.Page2 p a {
+  font-size: 18px;
+  color: #2c99ac; 
+  text-decoration: none; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.Page2 p a:hover {
+  color: #0766be; 
+}
+
+.Page2 h3{
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px; 
+  line-height: 1.8;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.link a {
+  font-size: 18px;
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #e2e2e2;
+  background-color: transparent;
+  color: #e2e2e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.Page2 a:hover {
+  color: #1e6b9e; 
+}
+
+.page2-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.set {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px; 
+  height: auto;
+  margin-top: 950px;
+  margin-left: 400px;
+}
+
+.set svg {
+  width: 400px;
+  height: auto;
+}
+
+.l {
   border-left: 1px solid white;
   padding-left: 50px; 
   height: 400px;
   margin-left: -70px;
 }
-/*  Responsive cho mobile */
-@media (max-width: 768px) {
+
+/* reponsive cho laptop */
+@media (max-width: 1400px) {
   .Page2 {
-    flex-direction: column;
-    height: auto;
+    flex-direction: column; 
     padding: 20px;
-  }
-
-  .set {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 40px;
-    transform: none;
-    width: 100%;
-  }
-
-  .set svg {
-    width: 90%;
+    align-items: flex-end; 
   }
 
   .text {
-    width: 100%;
-    margin-top: 40px;
-    text-align: center;
-    padding: 10px;
+    padding-left: 700px;
+    margin-bottom: -150px;
+    text-align: flex-start;
   }
 
-  .Page2 h2 {
-    font-size: 26px;
-    margin-left: 0;
+  .set {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px; 
+    height: auto;
+    margin-top: 800px;
+    margin-left: 200px;
   }
-
-  .Page2 h1,
-  .Page2 h3 {
-    font-size: 14px;
-    margin-left: 0;
-    line-height: 1.6;
-  }
-
-  .l {
-    border-left: none;
-    border-top: 1px solid white;
-    padding-left: 0;
-    padding-top: 20px;
-    margin-left: 0;
+  
+  .set svg {
+    width: 400px;
     height: auto;
   }
 
-  .link {
-    justify-content: center;
-    margin-left: 0;
-  }
-}
-/* reposive cho laptop */
-@media (max-width: 1366px) {
-  .text {
-    padding-left: 300px;  /* giảm khoảng cách hợp lý */
-    margin-top: 120px;    /* không cần đẩy quá xa xuống */
-  }
-
-  .Page2 h2 {
-    font-size: 32px;
-    margin-left: -30px;
-  }
-
-  .Page2 h1 {
-    font-size: 14px;
-    margin-left: -30px;
-  }
-
-  .Page2 h3 {
-    font-size: 13px;
-    margin-left: 0;
-  }
-
   .l {
-    height: 300px;
-    margin-left: -30px;
-  }
-
-  .set {
-    margin-left: 200px;  /* dịch SVG về gần giữa hơn */
-    margin-top: 300px;   /* giảm mạnh khoảng cách xuống */
-  }
-
-  .set svg {
-    width: 300px;
-  }
-
-  .link {
+    height: auto;
     margin-left: 0;
-    gap: 8px;
+    height: 400px;
+  margin-left: -70px;
   }
-
-  .circle {
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-  }
+  
 }
+

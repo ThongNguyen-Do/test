@@ -1,5 +1,6 @@
 import React from "react";
-import '../CSS/Circle.css';
+
+
 const ElongatedCircles = () => {
   const width = 400;
   const height = 600;
@@ -14,11 +15,11 @@ const ElongatedCircles = () => {
 
   for (let i = 0; i < numCircles; i++) {
     const offset = (i - Math.floor(numCircles / 2)) * spacing;
-    
-    const scaleDownBelow = 1; // <-- chỉnh tỉ lệ vòng tròn ở dưới
+
+    const scaleDownBelow = 1; 
     const baseRadius = maxRadius * (1 - Math.abs(offset) / (numCircles / 2 * spacing));
     const radius = offset > 0 ? baseRadius * scaleDownBelow : baseRadius;
-  
+
     circles.push(
       <circle
         key={i}
@@ -33,11 +34,16 @@ const ElongatedCircles = () => {
   }
 
   return (
-    <svg width={width} height={height}>
-      <g transform="rotate(500, 200, 300)"> 
-        {circles}
-      </g>
-    </svg>
+    
+    <svg 
+    viewBox="0 0 400 600" 
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g transform="rotate(500, 200, 300)">
+      {circles}
+    </g>
+  </svg>
+  
   );
 };
 

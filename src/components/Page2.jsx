@@ -8,9 +8,7 @@ export default function Page2() {
       <Circle/>
       </div>
      
-      <div className="page2-left">
       
-      </div>
       <div className="text">
         <h1>Team of unique combination</h1>
         <h2>Global Intelligence</h2>

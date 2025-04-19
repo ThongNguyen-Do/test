@@ -9,20 +9,6 @@
   z-index: 1000;
 }
 
-/* Hiển thị trên desktop, laptop */
-@media (min-width: 768px) {
-  .number-container {
-    display: flex; /* Đảm bảo .number-container hiển thị trên màn hình lớn */
-  }
-}
-
-/* Ẩn .number-container trên điện thoại */
-@media (max-width: 768px) {
-  .number-container {
-    display: none; /* Ẩn .number-container trên màn hình nhỏ (mobile) */
-  }
-}
-
 .number-item {
   font-size: 6rem;
   color: rgb(155, 213, 228);
@@ -35,4 +21,32 @@
   opacity: 1;
   font-weight: bold;
   transform: scale(1.2);
+}
+/* Laptop dưới 1400px */
+@media (max-width: 1400px) {
+  .number-container {
+    left: 450px;
+  }
+}
+
+/* Laptop nhỏ (ví dụ 1366px hoặc 1200px) */
+@media (max-width: 1200px) {
+  .number-container {
+    left: 450px;
+  }
+}
+
+/* Tablet và Mobile */
+@media (max-width: 768px) {
+  .number-container {
+    position: static; /* Không cần cố định nữa, tránh chồng giao diện */
+    transform: none;
+    flex-direction: row; /* Hiển thị ngang */
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .number-item {
+    font-size: 2.5rem;
+  }
 }

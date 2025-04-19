@@ -2,8 +2,9 @@ import React from 'react';
 import '../CSS/Page3.css';
 import Number from './Number';
 import Chart from './Chart';
+
 export default function Page6() {
- 
+  
     
   return (
     <section className=" section-page Page3">

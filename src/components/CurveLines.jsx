@@ -24,17 +24,10 @@ const CurveLines = () => {
   }
 
   return (
-    <div className="curve-container">
-      <svg
-        viewBox={`0 0 ${width} ${height}`}
-        preserveAspectRatio="xMidYMid meet"
-        style={{ width: "100%", height: "auto" }}
-      >
-        {lines}
-      </svg>
-    </div>
+    <svg width="50%" height="50%" viewBox={`0 0 ${width} ${height}`}>
+      {lines}
+    </svg>
   );
-  
 };
 
 export default CurveLines;
