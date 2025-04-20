@@ -29,19 +29,19 @@
   }
 }
 
-/* Laptop nhỏ (ví dụ 1366px hoặc 1200px) */
+/* Laptop nhỏ  */
 @media (max-width: 1200px) {
   .number-container {
     left: 450px;
   }
 }
 
-/* Tablet và Mobile */
-@media (max-width: 768px) {
+/*  Mobile */
+@media (max-width: 900px) {
   .number-container {
-    position: static; /* Không cần cố định nữa, tránh chồng giao diện */
+    position: static; 
     transform: none;
-    flex-direction: row; /* Hiển thị ngang */
+    flex-direction: row; 
     justify-content: center;
     margin-top: 20px;
   }

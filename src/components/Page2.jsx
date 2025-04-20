@@ -7,8 +7,6 @@ export default function Page2() {
       <div className='set'>
       <Circle/>
       </div>
-     
-      
       <div className="text">
         <h1>Team of unique combination</h1>
         <h2>Global Intelligence</h2>

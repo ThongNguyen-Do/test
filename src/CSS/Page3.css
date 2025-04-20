@@ -105,7 +105,7 @@
 }
 
 /* Tablet & Mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .Page3 {
     flex-direction: column;
     padding: 20px;
@@ -124,20 +124,29 @@
 
   .Page3 h1 {
     font-size: 28px;
+    text-align: left;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif; 
+   
   }
 
   .Page3 h2 {
     font-size: 22px;
+    font-family: 'Roboto', sans-serif; 
+    text-align: left;
+    margin-left: 50px;
   }
 
   .Page3 p a,
   .ex a {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif; 
   }
 
   .nav,
   .money {
     font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
   }
 
   .cir {
@@ -145,4 +154,20 @@
     height: 20px;
     font-size: 12px;
   }
+  .ex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif; 
+}
+.ex a {
+    font-size: 15px;
+    color: #2c99ac; 
+    text-decoration: none;
+    font-weight: bold;
+
+}
+  
 }

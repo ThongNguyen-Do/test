@@ -103,6 +103,20 @@
     .c {
       margin-left: 380px;
     }
+    .pic {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px; 
+      height: auto;
+    }
+    
+    
+    .pic svg {
+      width: 650px;
+      height: auto;
+    }
   }
   
   @media (max-width: 992px) {
@@ -110,17 +124,18 @@
       flex-direction: column;
       padding: 50px;
       height: auto;
+      align-items: flex-start;
     }
   
-    .left,
+    
     .right {
       width: 100%;
     }
   
     .left h2 {
-      margin-left: 0;
+      margin-right: -500px;
       font-size: 35px;
-      text-align: center;
+      text-align: left;
       margin-top: 100px;
     }
   
@@ -130,7 +145,7 @@
   
     .right h1 {
       margin-right: 0;
-      text-align: center;
+      text-align: left;
     }
   
     .c {
@@ -141,6 +156,8 @@
   
     .pic svg {
       width: 100%;
+      display: none;
+  
     }
   
     .pic {
@@ -149,4 +166,11 @@
       margin: 0 auto;
       text-align: center;
     }
+    .left h2 {
+      margin-left: 0px;
+      font-size: 40px;
+    }
+  .c{
+    display: none;
+  }
   }

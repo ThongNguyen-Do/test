@@ -78,7 +78,7 @@
   .menu-toggle {
     display: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .navbar {
       flex-wrap: wrap;
       padding: 0 20px;
@@ -87,38 +87,30 @@
   
     .navbar-logo {
       margin-left: 0;
-      font-size: 22px;
-    }
-  
-    .navbar-search {
-      display: none;
     }
   
     .navbar-links {
-      display: none;
       flex-direction: column;
-      gap: 20px;
-      background-color: white;
       width: 100%;
-      padding: 20px;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      z-index: 998;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: none; /* Ẩn mặc định */
+      padding: 20px 0;
+      background-color: white;
+      gap: 20px;
     }
   
-    .navbar-links.show {
-      display: flex;
+    .navbar-links.active {
+      display: flex; /* Hiện khi có class active */
     }
   
     .menu-toggle {
       display: block;
       font-size: 24px;
-      color: #001b48;
-      background: none;
-      border: none;
       cursor: pointer;
+      color: #001b48;
+      margin-left: auto;
+    }
+  
+    .navbar-search {
+      display: none;
     }
   }
- 
