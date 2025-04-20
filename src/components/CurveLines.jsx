@@ -10,11 +10,11 @@ const CurveLines = () => {
     const startX = 0;
     const startY = (height / count) * i;
 
-    const endX = (width / count) * i;
+    const endX = (width  / count) * i;
     const endY = height;
 
     const controlX = width / 2;
-    const controlY = height / 2;
+    const controlY = height / 1;
 
     lines.push(
       <path
